@@ -1,9 +1,7 @@
 def is_prime(n):
-    i = n - 1
-    while (i > 1):
+    for i in range (2, int(n / 2) + 1):
         if n % i == 0:
             return False
-        i -= 1
     return True
 
 def nth_prime(n):
